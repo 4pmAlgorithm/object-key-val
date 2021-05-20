@@ -5,3 +5,10 @@
 3. For each question, read the README, and then write your code in the .js
    file in each directory.
 4. Save your work to update the tests.
+
+
+
+## steps
+1. cd to correct directory
+2. npm install
+3. npm test
