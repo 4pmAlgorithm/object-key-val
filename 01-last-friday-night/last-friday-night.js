@@ -1,5 +1,6 @@
 //practice 
 
+// #7 2021/5/20 
 //#6 02/09/2020  looked at solution
 //#5 2019/12/23
 //#4 2019/12/10 5mins
@@ -9,17 +10,44 @@
 
 
 
+// #7 2021/5/20 
+ let transactions = [
+      {
+        name: 'apples',
+        amount: 5
+      }, {
+        name: 'kleenex',
+        amount: 2
+      }, {
+        name: 'knitting supplies',
+        amount: 10,
+      }
+    ];
 
+function lastFridayNight(trans){
+  console.log(trans)
+  let total = 0;
+  for(let i = 0; i < trans.length; i++){
+    total += trans[i]['amount']
+  }
+  console.log(total)
+  return total
+}
+
+     lastFridayNight(transactions)
 
 //#5 2019/12/23
-const lastFridayNight  = (trans) => {
-  total = 0;
-  for(let i = 0; i< trans.length; i++){ //need to check individual objects key, AMOUNT.
-    total += trans[i]['amount']; //if use, bracket. keep using bracket. Use quotation for name of keys. 
-    //return total don't return inside of the for loop. 
-  }
- return total
-}
+// const lastFridayNight  = (trans) => {
+//   total = 0;
+//   for(let i = 0; i< trans.length; i++){ //need to check individual objects key, AMOUNT.
+//     total += trans[i]['amount']; //if use, bracket. keep using bracket. Use quotation for name of keys. 
+//     //return total don't return inside of the for loop. 
+//   }
+//   console.log(total)
+//  return total
+// }
+
+// lastFridayNight(transactions)
 
 
 

@@ -28,6 +28,11 @@ let transactions = [
 
 sumTransactions(transactions) // => 10512
 ```
+
+
+
+
+
 /////////////solution
 ```js
 function lastFridayNight(transactions){
