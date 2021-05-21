@@ -1,4 +1,5 @@
 //practice
+//#7 5/20/2020
 //#6 4/7/2020 
 //#5
 //#4
@@ -21,8 +22,27 @@
 // 11 ...the student was present on that day!
 // 12 return
 
-
-
+//#7 5/20/2020
+// YOUR CODE BELOW
+function attendanceCheck (day){
+  let result = []
+  
+  for(let i = 0; i < classRoom.length; i++){
+    let studentObj = classRoom[i] 
+    for( studentName in studentObj){
+      let studentAttendance = studentObj[studentName]
+        for(let i = 0; i < studentAttendance.length; i++){
+         let eachDayObj = studentAttendance[i]
+             for( dayName in eachDayObj ){
+                 if(dayName === day && eachDayObj[dayName] === true)  
+                   result.push(studentName)
+                 }
+            }
+        } 
+    }  
+  }
+  return result
+}
 //#6 4/7/2020 no solution
 // YOUR CODE BELO
 const attendanceCheck = (day) => {

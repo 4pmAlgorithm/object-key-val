@@ -8,7 +8,20 @@
 
 
 
+//#5 5/20/2021 
+function dogBreeder (name = "Steve", age=0){
 
+    if(typeof(name)==="number"){
+    age = name
+    name = "Steve"
+  }
+  
+  let obj = {}
+  obj['name'] = name
+  obj['age']=age
+  
+  return obj
+}
 
 //#4 3/12/2020
 const dogBreeder = (name, age) => {

@@ -1,4 +1,6 @@
 
+//#15 5/20/2021
+//#14 5/20/2021
 //#13 4/01 11:14pm-11:49pm
 //#12 3/12
 //#11 2/9/2020 2:28-2:32 4mins
@@ -46,6 +48,39 @@ let animalNoises = [
     }
   }
 ];
+
+
+//#15 5/20/2021
+
+function petSounds(animal, country){
+  for(let i = 0; i < animalNoises.length; i++){
+    
+    let animalObj = animalNoises[i]
+   
+    if(animal in animalObj){  // if the animal is a key in that animal object...
+      let countryObj = animalObj[animal]
+      let sound = countryObj[country]
+      
+      animal = animal[0].toUpperCase() + animal.slice(1)
+      
+      return `${animal}s in ${country} say ${sound}` 
+      
+    }
+  }
+}
+
+//#14 5/20/2021 but didn't pass
+function petSounds(name, country){
+  
+  let sentence = ""
+  
+  animalNoises.map((eachAnimal) => 
+           if(name in animalNoises){
+           sentence += `${name}s in ${country} say ${eachAnimal[name][country]}`
+  })
+  console.log(sentence)
+  return sentence
+}
 
 
 
