@@ -1,5 +1,7 @@
 //practice
-//#7 5/20/2020
+
+//#8 5/28/2021
+//#7 5/20/2021
 //#6 4/7/2020 
 //#5
 //#4
@@ -22,7 +24,43 @@
 // 11 ...the student was present on that day!
 // 12 return
 
-//#7 5/20/2020
+let classRoom = [
+  {
+      "Marnie" : [
+              {"Monday" : true},
+              {"Tuesday" : true},
+              {"Wednesday" : true},
+              {"Thursday" : true},
+              {"Friday" : true}
+          ]
+  },
+
+//#8 5/28/2021
+function attendanceCheck(day){
+  let attendedName = []
+  
+  for(let i =0; i < classRoom.length; i++){
+    let eachStudentObj = classRoom[i]
+    
+    for(let eachStudentName in eachStudentObj){     
+      let stuDayArr = eachStudentObj[eachStudentName]
+      console.log(stuDayArr)
+      for(let i =0; i < stuDayArr.length; i++){
+        let stuDayObj = stuDayArr[i]
+        //console.log(stuDayObj)
+        for(let date in stuDayObj){
+           if(stuDayObj[date] === true && date === day){
+          attendedName.push(eachStudentName)
+          }
+        }
+      }
+    }
+  }
+  return attendedName
+}
+
+
+//#7 5/20/2021
 // YOUR CODE BELOW
 function attendanceCheck (day){
   let result = []
