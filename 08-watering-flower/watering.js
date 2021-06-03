@@ -44,7 +44,7 @@ let watering = [
 function wateringFlowerCheck(day){
   let flowerName = []
   for(let flowerObj of watering ){
-    console.log("::::::::", flowerObj, ";::::")
+    console.log("::::::::", flowerObj, ";:::")
 
     for(let flowerNameKey in flowerObj){
         
