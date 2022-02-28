@@ -1,5 +1,6 @@
 //practice 
 
+//#8 2022/2/28
 // #7 2021/5/20 
 //#6 02/09/2020  looked at solution
 //#5 2019/12/23
@@ -10,31 +11,63 @@
 
 
 
-// #7 2021/5/20 
- let transactions = [
-      {
-        name: 'apples',
-        amount: 5
-      }, {
-        name: 'kleenex',
-        amount: 2
-      }, {
-        name: 'knitting supplies',
-        amount: 10,
-      }
-    ];
-
-function lastFridayNight(trans){
-  console.log(trans)
+const lastFridayNight = (arr) => {
   let total = 0;
-  for(let i = 0; i < trans.length; i++){
-    total += trans[i]['amount']
+  for(let i = 0; i < arr.length; i++){
+    total += arr[i].amount
   }
-  console.log(total)
+
+  //console.log(total)
   return total
 }
 
-     lastFridayNight(transactions)
+let transactions = [
+  {
+    name: "Tons of glitter",
+    amount: 70
+  },
+  {
+    name: "Porcelain Pink Flamingos",
+    amount: 92
+  },
+  {
+    name: "Chandelier replacement",
+    amount: 10000,
+  },
+  {
+    name: "Dinner at TGIF x6",
+    amount: 350
+  }
+];
+
+lastFridayNight(transactions)
+
+
+// #7 2021/5/20 
+//  let transactions = [
+//       {
+//         name: 'apples',
+//         amount: 5
+//       }, {
+//         name: 'kleenex',
+//         amount: 2
+//       }, {
+//         name: 'knitting supplies',
+//         amount: 10,
+//       }
+//     ];
+
+// function lastFridayNight(trans){
+//   console.log(trans)
+//   let total = 0;
+//   for(let i = 0; i < trans.length; i++){
+//     total += trans[i]['amount']
+//   }
+//   console.log(total)
+//   return total
+// }
+
+//      lastFridayNight(transactions)
 
 //#5 2019/12/23
 // const lastFridayNight  = (trans) => {

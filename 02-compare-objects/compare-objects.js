@@ -1,31 +1,54 @@
 // YOUR CODE BELOW 
 
+//#11 2/28/2022
 //#10 5/20/2021 
 //#9 02/29/2020 10mins
 //#8 
-//11/19/2019 1:21-1:57  36mins
+//#7 11/19/2019 1:21-1:57  36mins
+
+
+//#11 2/28/2022
+const compareObjects = (arg1, arg2) => {
+  if(Object.keys(arg1).length !== Object.keys(arg2).length){
+    console.log(false)
+    return false
+  } else if(Object.keys(arg1) !== Object.keys(arg2)){
+    console.log(false)
+    return false
+  } else if(Object.keys(arg1) !== Object.keys(arg2)){
+    console.log(false)
+    return false
+  } else if(Object.values(arg1) !== Object.values(arg2)){
+    console.log(false)
+    return false
+  } else return true;
+}
+
+
+compareObjects({ name: 'zeke' }, { name: 'zeke', age: 12 })
+
 
 
 //#10 5/20/2021
 
 
-function compareObjects( obj1, obj2 ){
+// function compareObjects( obj1, obj2 ){
   
-  //compare value
-  for(key1 in obj1){
-    if(obj1[key1] !== obj2[key1]){
-      console.log(false)
-    }
-  }
-  for(key2 in obj2){
-    if(obj2[key2] !== obj1[key2]){
-      console.log(false)
-    }
-  }
-  console.log(true)
-}
+//   //compare value
+//   for(key1 in obj1){
+//     if(obj1[key1] !== obj2[key1]){
+//       console.log(false)
+//     }
+//   }
+//   for(key2 in obj2){
+//     if(obj2[key2] !== obj1[key2]){
+//       console.log(false)
+//     }
+//   }
+//   console.log(true)
+// }
 
-compareObjects({ name: 'zeke' }, { name: 'zeke', age: 12 })
+// compareObjects({ name: 'zeke' }, { name: 'zeke', age: 12 })
 
 
 //#8

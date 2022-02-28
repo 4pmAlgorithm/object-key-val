@@ -12,3 +12,43 @@
 1. cd to correct directory
 2. npm install
 3. npm test
+
+
+## get the values of the objects
+* 1 es3
+```js
+for( let key in obj){
+   return obj[key]
+}
+```
+
+* 2 ES5
+
+```js
+let keys = Object.keys(obj1)
+
+Object.keys(obj1).forEach(function (key) {
+   let val = obj1[key]
+})
+```
+
+* 3 ES
+
+```js
+for( const key of Object.keys(obj1)){
+   const val = obj1[key]
+}
+```
+
+* 4 ES7
+```js
+
+const values = Object.values(obj);
+
+for( const value of Object.values(obj1)){
+   return vale
+}
+
+```
+
+https://stackoverflow.com/questions/7306669/how-to-get-all-properties-values-of-a-javascript-object-without-knowing-the-key
