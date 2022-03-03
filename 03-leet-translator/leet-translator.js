@@ -1,5 +1,7 @@
 // //practice
 
+//#16 3/2/2022 //trying forEach method 5mins
+//#15 3/2/2022 // 5 mins //wow I didnt' have to look up anything. Two years ago, it took me for hours to solve this problem, looking up solutions, not understanding still. This time, it only took 5mins and I didn't have to look up anything. I improved so much! 
 // //#14 5/20/2021
 // //#13 4/1 5mins
 // //#12 2/9/2020 15mins
@@ -12,28 +14,69 @@
 // //#5
 // //#4
 
-
-// //#14 5/20/2021
-function leetTranslator(norm){
-  let letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
+let letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
 let leetChars = ['@', '8', '(', '|)', '3', 'ph', 'g', '#','l', '_|', '|<', '1', "|'|'|", '/\/', '0', '|D', '(,)', '|2', '5', '+', '|_|', '|/', "|/|/'",'><', 'j', '2'];
 
-  let dictionary = {};
-  
-  for(let i = 0; i < letters.length; i++){
-    dictionary[letters[i]]= leetChars[i] 
-  }
-  
-  let result = '';
-  
-  norm = norm.toLowerCase()
-  
-  for(let i = 0; i < norm.length; i++){
-    result += dictionary[norm[i]]
-  }
-  console.log(result)
-  return result
+//#16 3/2/2022 //trying forEach method
+const leetTranslator = (normStr) => {
+  let dict = {}
+  letters.forEach( (eachEle, i) => {
+    dict[eachEle] = leetChars[i]
+  })
+
+  let str = ""
+  normStr.toLowerCase().split("").forEach((eachLet, i) => {
+    str += dict[eachLet]
+  })
+
+  return str
 }
+
+leetTranslator("hello")
+
+
+
+//#15 3/2/2022 //wow I didnt' have to look up anything. Two years ago, it took me for hours to solve this problem, looking up solutions, not understanding still. This time, it only took 5mins and I didn't have to look up anything. I improved so much!
+
+
+// const leetTranslator = (normStr) => {
+  
+//   //creating the dictionary
+//   let dictionary = {};
+//   for(let i = 0; i < letters.length; i++){
+//     dictionary[letters[i]] = leetChars[i]
+//   }
+
+//   let returningStr = ''
+//   for(let i = 0; i < normStr.length; i++){
+//     returningStr += dictionary[normStr[i]]
+//   }
+
+//   console.log(returningStr)
+// }
+
+// leetTranslator("hello")
+// //#14 5/20/2021
+// function leetTranslator(norm){
+//   let letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
+// let leetChars = ['@', '8', '(', '|)', '3', 'ph', 'g', '#','l', '_|', '|<', '1', "|'|'|", '/\/', '0', '|D', '(,)', '|2', '5', '+', '|_|', '|/', "|/|/'",'><', 'j', '2'];
+
+//   let dictionary = {};
+  
+//   for(let i = 0; i < letters.length; i++){
+//     dictionary[letters[i]]= leetChars[i] 
+//   }
+  
+//   let result = '';
+  
+//   norm = norm.toLowerCase()
+  
+//   for(let i = 0; i < norm.length; i++){
+//     result += dictionary[norm[i]]
+//   }
+//   console.log(result)
+//   return result
+// }
 
 
 // //#13 NoSolution <3 so proud of myself

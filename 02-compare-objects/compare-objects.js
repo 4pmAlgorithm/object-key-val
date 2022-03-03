@@ -1,5 +1,6 @@
 // YOUR CODE BELOW 
 
+//#12 3/2/2022
 //#11 2/28/2022
 //#10 5/20/2021 
 //#9 02/29/2020 10mins
@@ -7,25 +8,49 @@
 //#7 11/19/2019 1:21-1:57  36mins
 
 
-//#11 2/28/2022
-const compareObjects = (arg1, arg2) => {
-  if(Object.keys(arg1).length !== Object.keys(arg2).length){
+//#12
+const compareObjects = (obj1, obj2) => {
+  console.log(Object.values(obj2))
+  if(Object.keys(obj1).length !== Object.keys(obj2)){
     console.log(false)
     return false
-  } else if(Object.keys(arg1) !== Object.keys(arg2)){
+  }
+  if(obj1[Object.keys(obj1)] !== obj2[Object.keys(obj1)]){
     console.log(false)
     return false
-  } else if(Object.keys(arg1) !== Object.keys(arg2)){
+  }
+  if(obj2[Object.keys(obj2)]!== obj1[Object.keys(obj2)]){
     console.log(false)
     return false
-  } else if(Object.values(arg1) !== Object.values(arg2)){
-    console.log(false)
-    return false
-  } else return true;
+  }
+  console.log(true)
+  return true
 }
 
-
 compareObjects({ name: 'zeke' }, { name: 'zeke', age: 12 })
+
+
+//#11 2/28/2022
+// const compareObjects = (arg1, arg2) => {
+//   if(Object.keys(arg1).length !== Object.keys(arg2).length){
+//     console.log(false)
+//     return false
+//   } if(Object.keys(arg1) !== Object.keys(arg2)){
+//     console.log(false)
+//     return false
+//   } if(Object.keys(arg1) !== Object.keys(arg2)){
+//     console.log(false)
+//     return false
+//   } if(Object.values(arg1) !== Object.values(arg2)){
+//     console.log(false)
+//     return false
+//   }
+  
+//   return true;
+// }
+
+
+// compareObjects({ name: 'zeke' }, { name: 'zeke', age: 12 })
 
 
 

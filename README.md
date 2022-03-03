@@ -52,3 +52,10 @@ for( const value of Object.values(obj1)){
 ```
 
 https://stackoverflow.com/questions/7306669/how-to-get-all-properties-values-of-a-javascript-object-without-knowing-the-key
+
+
+
+## How to turn STR into an array 
+string.split("")
+
+"hello" => [ 'h', 'e', 'l', 'l', 'o' ]
