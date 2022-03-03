@@ -6,6 +6,29 @@ letters.
 `frequencyAnalysis` should return an object containing the count for each letter
 in the string.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SOLUTION
 ```javascript
 frequencyAnalysis('abca'); // => {a: 2, b: 1, c: 1}
 ```
