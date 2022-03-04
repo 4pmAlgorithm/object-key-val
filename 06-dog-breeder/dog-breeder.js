@@ -1,4 +1,5 @@
 
+//#7 3/4/22 3:55pm - 4:01pm
 //#6 03/03/2022 5:15pm - 5:30pm :-( looked at the solution..........
 //#4 3/12/2020
 //#3
@@ -8,27 +9,47 @@
 //dogBreeder 4:30-5:00 30mins
 
 
-//#6 03/03/2022 5:15pm - 5:30pm :-( looked at the solution..........
 const dogBreeder = (name = "Steve", age = 0) => {
-  let obj1 = {};
+    let obj1 = {}
 
-  if(age === undefined){
-    obj1["name"] = name;
-    obj1["age"] = 0;
-  }
-  else if(typeof(name)  === "number" || age === undefined){
-    obj1["name"] = "Steve";
-    obj1["age"] = name;
-    
-  }else{
-    obj1["name"] = name;
-    obj1["age"] = age || 0;
-  }
+    if(age === "undefined"){
+      age = 0
+    }
+
+    if(typeof name === "number"){
+      age = name
+      name = "Steve"
+    }
+    obj1.name = name;
+    obj1.age = age;
+  
   console.log(obj1)
   return obj1
 }
 
-dogBreeder(15) 
+dogBreeder("Steve")
+
+//#6 03/03/2022 5:15pm - 5:30pm :-( looked at the solution..........
+// const dogBreeder = (name = "Steve", age = 0) => {
+//   let obj1 = {};
+
+//   if(age === undefined){
+//     obj1["name"] = name;
+//     obj1["age"] = 0;
+//   }
+//   else if(typeof(name)  === "number" || age === undefined){
+//     obj1["name"] = "Steve";
+//     obj1["age"] = name;
+    
+//   }else{
+//     obj1["name"] = name;
+//     obj1["age"] = age || 0;
+//   }
+//   console.log(obj1)
+//   return obj1
+// }
+
+// dogBreeder(15) 
 
 // //#5 5/20/2021 
 // function dogBreeder (name = "Steve", age=0){

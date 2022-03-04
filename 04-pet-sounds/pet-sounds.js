@@ -1,5 +1,5 @@
 
-
+//#17 3/4/22 3:38pm - 3:48
 //#16 3/03/2022 4:30pm-4:53pm
 //#15 5/20/2021
 //#14 5/20/2021
@@ -51,25 +51,38 @@ let animalNoises = [
   }
 ];
 
+petSounds("dog", "Iceland")
 
-//#16 3/03/2022 4:30pm-
-
-function petSounds (animalName, countryName) {
+//#17 3/4/22 3:38pm - 3:48
+function petSounds(animal, country){
   let str = ""
-  animalNoises.forEach( eachAniObj => {
-    if(animalName === Object.keys(eachAniObj)[0]){
-      
-      console.log(`${animalName.charAt(0).toUpperCase()}${animalName.slice(1)}s in ${countryName} say ${eachAniObj[animalName][countryName]}`)
-      str += `${animalName.charAt(0).toUpperCase()}${animalName.slice(1)}s in ${countryName} say ${eachAniObj[animalName][countryName]}`
+  animalNoises.forEach(eachAnimal => {
+    if(animal === Object.keys(eachAnimal)[0]){
+      str += `${animal.charAt(0).toUpperCase()}${animal.slice(1)}s in ${country} say ${eachAnimal[animal][country]}`
     }
   })
   return str
-  // for(let i=0; i<animalNoises.length; i++){
-  //   console.log(Object.keys(animalNoises[i]))
-  // }
 }
 
-petSounds("dog", "Iceland")
+
+//#16 3/03/2022 4:30pm-
+
+// function petSounds (animalName, countryName) {
+//   let str = ""
+//   animalNoises.forEach( eachAniObj => {
+//     if(animalName === Object.keys(eachAniObj)[0]){
+      
+//       console.log(`${animalName.charAt(0).toUpperCase()}${animalName.slice(1)}s in ${countryName} say ${eachAniObj[animalName][countryName]}`)
+//       str += `${animalName.charAt(0).toUpperCase()}${animalName.slice(1)}s in ${countryName} say ${eachAniObj[animalName][countryName]}`
+//     }
+//   })
+//   return str
+//   // for(let i=0; i<animalNoises.length; i++){
+//   //   console.log(Object.keys(animalNoises[i]))
+//   // }
+// }
+
+// petSounds("dog", "Iceland")
 
 
 //#15 5/20/2021

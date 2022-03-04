@@ -1,4 +1,5 @@
 
+//#11 3/4/22 3:51 - 3:54pm
 //#10 03/03/2022 4:55PM - 5:11PM
 
 //  #8 12/26/2019
@@ -6,23 +7,38 @@
 //  #6  12/25/2019
 //  #5  12/25/2019
 
+function frequencyAnalysis(str){
+  let obj = {}
+  for(let i =0; i<str.length; i++){
+    if(!obj[str[i]]){
+      obj[str[i]] = 1
+    }else{
+      obj[str[i]] ++
+    }
+  }
+  console.log(obj)
+  return obj
+}
+frequencyAnalysis("hello world all about love")
+
+
 
 //#10 03/03/2022 4:55PM
-const frequencyAnalysis = (str) => {
-  let obj1 = {}
-  for (let i = 0;  i < str.length; i++){
-    if(!obj1[str[i]]){
-      obj1[str[i]] = 1
-    } else{
-      obj1[str[i]] += 1
-    }
-    //console.log(obj1)
-  }
-  //console.log(obj1)
-  return obj1
-}
+// const frequencyAnalysis = (str) => {
+//   let obj1 = {}
+//   for (let i = 0;  i < str.length; i++){
+//     if(!obj1[str[i]]){
+//       obj1[str[i]] = 1
+//     } else{
+//       obj1[str[i]] += 1
+//     }
+//     //console.log(obj1)
+//   }
+//   //console.log(obj1)
+//   return obj1
+// }
 
-frequencyAnalysis("hello world all about love")
+//frequencyAnalysis("hello world all about love")
 
 
 
