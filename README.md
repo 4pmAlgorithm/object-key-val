@@ -14,15 +14,23 @@
 3. npm test
 
 
+
+## check if the key/values pair exist in the obj
+```js
+obj.hasOwnProperty(key)
+```
+
+
+
 ## get the values of the objects
-* 1 es3
+* 1: es3
 ```js
 for( let key in obj){
    return obj[key]
 }
 ```
 
-* 2 ES5
+* 2: ES5
 
 ```js
 let keys = Object.keys(obj1)
@@ -32,7 +40,7 @@ Object.keys(obj1).forEach(function (key) {
 })
 ```
 
-* 3 ES
+* 3: ES
 
 ```js
 for( const key of Object.keys(obj1)){
@@ -40,7 +48,7 @@ for( const key of Object.keys(obj1)){
 }
 ```
 
-* 4 ES7
+* 4: ES7
 ```js
 
 const values = Object.values(obj);
@@ -48,6 +56,7 @@ const values = Object.values(obj);
 for( const value of Object.values(obj1)){
    return vale
 }
+
 
 ```
 
